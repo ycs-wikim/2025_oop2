@@ -113,12 +113,11 @@ int main()
     /// 동적 메모리 사용을 중지하므로, 해제를 요청
     free(ap);
 
-    int app[][1] = { 1, 2, 3 };
-    /*
     int arr[2][3] = { { 1, 2, 3}, {4, 5, 6} };
-    int** parr = (int**)arr;
+    //int** parr = (int**)arr;
+    int *parr[3]
     printf("parr : %d\n", parr[1][0]);
     //printf("parr : %d\n", **(parr + 4));
-    */
+
     std::cout << "Hello World!\n";
 }
