@@ -12,13 +12,23 @@ int main()
     int user = 0;
     int com = 0;
     int res = 0;
+    int cnt = 0;
     Game game;
 
     while (true)
     {
         cout << "가위(0) 바위(1) 보(2) 입력: ";
         cin >> user;
-        com = game.normalGame();
+        //com = game.normalGame();
+        if (cnt < 1500)
+        {
+            com = game.DrawGame(user);
+        }
+        else
+        {
+            com = game.normalGame();
+        }
+        cnt++;
         res = game.GetGameResult(user, com);
         printf("%d %d\n", user, com);
         if (user == 3)

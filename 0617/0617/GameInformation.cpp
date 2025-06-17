@@ -28,6 +28,9 @@ void GameInformation::allDraw()
 
 void GameInformation::printGame()
 {
-	printf("사람[ %d ] 컴퓨터[ %d ] 비김[ %d ]\n",
+	printf("전체[ %d ] : 사람[ %d ] 컴퓨터[ %d ] 비김[ %d ]\n",
+		m_userWin + m_comWin + m_Draw,
 		m_userWin, m_comWin, m_Draw);
+	printf("나의 승률: %.2f %%\n",
+		(float)m_userWin / (m_userWin + m_comWin + m_Draw) * 100);
 }

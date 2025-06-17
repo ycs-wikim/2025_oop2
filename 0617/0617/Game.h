@@ -10,6 +10,7 @@ class Game : public GameBoard, public GameInformation
 public:
 	Game(){}
 	int normalGame();
+	int DrawGame(int user);
 private:
 	Random m_rnd;
 };
